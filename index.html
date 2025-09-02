@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+
+        <title>Graduation Planner</title>
+        <link rel="icon" type="image/png"  href="img/_icon.png">
+
+    </head>
+    
+    <body>
+    
+        <div class="navbar">
+    <ul>
+    <li><a href="#About">About</a></li>
+    <li><a href="#Possibilities">Possibilities</a></li>
+    <li><a href="#Clock">Clock</a></li>
+    <li><a href="#Info">Info</a></li>
+    <li> <button id = "theme-button">Toggle Light Mode</button></li>
+    </ul>
+    
+</div>
+<div class="header-container">
+
+                    <div class = "hdr_pic">
+                <img id = "header_pic" alt="Image description" src="./img/header_icon.png">
+                </div>
+
+<div class="header-item">
+        <h1>GradPlan</h1>
+        </div>
+
+        <br>
+        <div class="header-item">
+        <h3>Planner. To Do List. Everything you need for a graduation</h3>
+        </div>
+
+        <div id = "Clock" class="timer-buttons">
+            <button class="timer_buttons" type="button">Set the date of the event</button>
+            <button class="timer_buttons" type="button">Change it to countdown</button>
+        </div>
+<div id = "box">
+<p id = "temporary"> clock will be there </p>
+</div>
+</div>
+        
+        <div class="basic_info">
+        <h2 id = "About">About the Event</h2>
+
+        <iframe src="https://youtu.be/xAV1dsCU5_Y?si=cEA4u3E_wPiBbxsb" ></iframe>
+
+        <p>This is the place for <strong>high school</strong>, or <strong>college</strong> students to plan the celebration of their graduation.
+            <p>Here you can create <strong>To Do List</strong> , so others will be able to see what you want to be done.<p> 
+                <p>You are also able to:<ul><p>
+                    <li>Invite anyonyone via link so others will be able to see all shared info </li>
+                    <li>Post pictures if they want to</li>
+                        <ul>
+                            <br><br>
+                        </div>
+
+        <h2 id = "Possibilities">Event Schedule</h2>
+
+        <img alt="" src="./img/grad_pic.png"
+        width = "400"
+        />
+        
+        <h3>Invite guests</h3>
+        <p style = "font-size: 20px;">Press the button to get your own and unique link to share with anyone who might want to attend.</p>    
+        <img alt="Image description" src="./img/invitation.png"
+        width = "300"
+        />
+        <br>
+        <button class = "main_buttons" type="button">Get Your Link</button>
+        <br>
+
+
+        <h3>Create To Do List</h3>
+        <p style = "font-size: 20px;">Press the button to create space where anyone will be able to post what needs to be done in a bullet point format.</p>
+        <img alt="Image description" src="./img/to_do_list.png"
+        width="300"
+        />
+        <br>
+        <button class = "main_buttons"  type="button">Create To Do List</button>
+        <br>
+
+        <h3>Post Your Own Pictures</h3>
+        <p style = "font-size: 20px;">Press the button to post any picture you want for everyone to see.</p>
+        <img alt="Image description" src="./img/photos.png"
+        width="300"
+        height="300"
+        />
+        <br>
+        <button class = "main_buttons"  type="button">Post Your Pictures</button>
+        <br>
+
+        <div id="rsvp">
+    <h2>RSVP</h2>
+    <div class="rsvp-container">
+
+        <div class="rsvp-para">
+            This is the place, wherre you can register for the event. <br>
+            Type your first and last name to let us know that you will attend the graduation  
+        </div>
+        <div class="rsvp-participants">
+            <p>🎟️ Robert Downey Jr. will attend.</p>
+            <p>🎟️ Sandra Bullock will attend.</p>
+            <p>🎟️ Julia Roberts will attend.</p>
+            <p>🎟️ Leonardo DiCaprio will attend.</p>
+            
+            <div class="participants">
+            </div>
+
+                        
+        </div>
+    </div>
+
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+            <label for = "fName">First Name:</label>
+        <input type="text" id = "fName">
+        <label for = "lName">Last Name:</label>
+        <input type="text" id = "lName">
+        <label for = "email">Email:</label>
+        <input type="text" id = "email">
+
+        </form>
+        <button id="rsvp-button">Submit RSVP</button>
+        <p><span id="attendance-count">4</span> People will attend</p>
+    </div>      
+</div>
+
+    <div id="success-modal" class="modal">
+        <div class="modal-container">
+            <div id="modal-item">
+                <p id = "modal-text">Here we go again</p>
+            </div>
+            <div class="modal-item">
+        <img alt="modal-img" src="./img/tralalero-tralala-small.png" width="300"/>                
+    </div>
+        </div>
+    </div>
+
+        <footer class="footer" id = "Info">
+<p>© 2025 GradPlan | <a href="#">Contact Us</a> | <a href="#">About Us</a></p>
+</footer>
+        <script src="index.js"></script>
+    </body>
+</html>
