@@ -108,3 +108,29 @@
 
     // TODO: animation variables and animateImage() function
 
+/* START: DIGITAL CLOCK SCRIPT */
+const digitalClock = document.getElementById('digital-clock-container');
+
+function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    
+    // Determine AM or PM
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    
+    // Convert to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    
+    // Update the clock's text content
+    digitalClock.textContent = `${hours}:${minutes}:${seconds} ${ampm}`;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
+// Call it once immediately to avoid a delay
+updateClock();
+/* END: DIGITAL CLOCK SCRIPT */
