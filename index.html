@@ -36,11 +36,17 @@
         </div>
 
         <div id = "Clock" class="timer-buttons">
-            <button class="timer_buttons" type="button">Set the date of the event</button>
-            <button class="timer_buttons" type="button">Change it to countdown</button>
+            <button id="set-date-btn" class="timer_buttons" type="button">Set the date of the event</button>
+            <button id="countdown-btn" class="timer_buttons" type="button">Change it to countdown</button>
         </div>
 
         <div id="digital-clock-container"></div>
+        <div id="date-selector-container" class="hidden">
+            <select id="month-select"></select>
+            <select id="day-select"></select>
+            <select id="year-select"></select>
+            <button id="date-enter-button">Enter</button>
+        </div>
 
 </div>
         
